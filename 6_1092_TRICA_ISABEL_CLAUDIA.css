@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    background-color: #eeeeee;
+    color:#3a3a3a;
+    display:flex;
+    flex-direction: column;
+}
+
+#header{
+    background-color: #07A4FC;
+}
+
+#options{
+    padding-left:0px;
+    margin: 0px;
+    padding: 0px;
+    width:15%;
+    background-color: #eeeeee;
+    border-radius:0px 0px 10px 10px;
+    display:none;
+    position: absolute;
+    z-index: top;
+    top:40px;
+}
+
+#options li{ 
+    list-style-type: none;
+    margin:0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+#export{
+    display:flex;
+    width:95%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.export-btn{
+    text-decoration: none;
+    font-weight: 500;
+    padding:8px;
+    margin-left:30px;
+    background-color: #07A4FC;
+    border:none;
+    color:white;
+    font-weight: 500;
+    transition:1s;
+}
+
+.export-btn:hover{
+    background-color: rgb(7, 124, 192);
+    transform:scale(1.02);
+}
+
+.export-btn:active{
+    background-color: #4ba6db;
+    transform:scale(0.95);
+}
+
+#app-name{
+    font-size: 1em;
+    display:inline;
+    margin-left:40px;
+    width:80%;
+}
+
+.white-text{color:white;}
+
+#controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+#editor{
+    background-color: white;
+    border-radius: 10px;
+    width:95%;
+    height:75%;
+    top:130px;
+    position:absolute;
+    align-self: center;
+    z-index:-1;
+    display:block;
+    margin-top:14px;
+    cursor: crosshair;
+}
+
+#elemente svg:hover{
+    cursor:pointer;
+}
+
+#pallette svg{
+    z-index: 1;
+    width:100%;
+    height:auto;
+
+}
+
+#pallette{
+    align-self: center;
+    width:170px;
+}
+
+#pallette-colors rect:hover{
+    stroke:#8cd5ff;
+    stroke-width: 4px;
+}
+
+.element-color{
+    width:35px;
+    height:35px;
+    background-color: #07A4FC;
+}
+
+.control{
+    padding:6px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.control:hover{
+    background-color: #f8f8f8;
+}
+
+label,p{
+    font-size:0.8em;
+    display:block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#editor #selectieRect, #editor #selectieElipsa, #editor #selectieLinie,#editor #selectieRomb {
+    fill-opacity: 0.5;
+    stroke-opacity: 0.5;
+}
+
+#coords{
+    font-size: 0.7em;
+    text-align: end;
+    margin-right:3%;
+    margin-top:-10px;
+}
+
+ svg .selectat {
+    filter: drop-shadow( 0px 0px 5px #07A4FC);
+}
+
+.active{
+    border-color:#07A4FC;
+    border-width: 4px;
+}
+
+#shape-coords{
+    width:35%;
+}
+
+#shape-coords input{
+    width:25px;
+    border: none;
+    margin:0px 10px;
+}
+
+#shape-coords label{
+    display:inline;
+}
+
+
+
+
+
+
